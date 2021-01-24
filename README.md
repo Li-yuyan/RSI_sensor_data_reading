@@ -1,0 +1,2 @@
+# RSI_sensor_data_reading
+此项目旨在利用python程序读取RSＩ六轴力传感器数据
