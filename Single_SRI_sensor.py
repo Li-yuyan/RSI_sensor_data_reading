@@ -1,9 +1,5 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
-#本文档用于传感器通讯测试
-#程序员：陈永厅
-#版权：哈尔滨工业大学(深圳)
-#日期：初稿：2020.6.13
 #系统函数
 import numpy as np
 import struct
