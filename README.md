@@ -78,4 +78,4 @@ s.send(stop_data_stream)
 recvData = bytearray(s.recv(1000))
 print str(recvData)
 ```
-# 完整代码见 singal_SRI_se
+# 完整代码见 Singal_SRI_sensor.py 程序
