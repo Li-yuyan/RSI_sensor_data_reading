@@ -22,7 +22,15 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #连接 
 s.connect((IP_ADDR, PORT)) 
 ``` 
-通过socket函数建立插口函数，通过connect建立连接，其中IP和端口号在传感器配置阶段可以设置，也可以直接使用默认的IP。
+通过socket函数建立插口函数，通过connect建立连接，其中IP和端口号在传感器配置阶段可以设置，也可以直接使用默认的IP。要使用程序采集多个传感器信息时，我们需要设置传感器的端口号，如下： 
+```
+#检查当前端口号
+AT+ETPT=?\r\n   #发送
+ACK+ETPT=4008$OK\r\n  #回应
+#修改当前端口号
+AT+ETPT=4009\r\n   #发送
+ACK+ETPT=4009$OK\r\n  #回应
+```
 
 
 ## 查看和配置参数  
