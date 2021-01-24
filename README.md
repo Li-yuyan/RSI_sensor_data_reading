@@ -12,3 +12,21 @@
 import struct 
 import socket 
 ```
+python没有专门处理字符的模块(字符被当做字符串），所以需要使用struct模块对数据进行解码，不懂struct模块的可以参照python之struct详解。socket是python的重要的通讯模块(套节字）,可以快速建立TCP通讯。  
+## 创建客服端，建立连接 
+```
+IP_ADDR	= '192.168.0.108' 
+PORT = 4008 
+#创建连接插口 
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+#连接 
+s.connect((IP_ADDR, PORT)) 
+``` 
+通过socket函数建立插口函数，通过connect建立连接，其中IP和端口号在传感器配置阶段可以设置，也可以直接使用默认的IP。
+
+
+## 查看和配置参数  
+查看和配置参数需要遵循特定的格式，可以参照手册 
+```
+
+```
